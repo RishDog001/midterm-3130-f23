@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" charset="UTF-8">
+    <title>Shoe Collection Retail Store</title>
+    <script src="_lib/js/lib/jquery-2.1.4.js"></script>
+    <script src="_lib/js/lib/jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" type="text/css" href="_lib/css/lib/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" type="text/css" href="_lib/css/mystyle.css">
+</head>
+<body>
+    <div id="pageHome" data-role="page">
+        <header data-role="header" data-position="fixed" data-theme="b">
+            <h1>My Shoe Collection Retail Store</h1>
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li>
+                        <a href="#pageHome" data-icon="home" style="background-color: #22aadd; font-size: 9.4pt; font-weight: bold">Home</a>
+                    </li>
+                    <li>
+                        <a href="#pageProducts" data-icon="tag">Products</a>
+                    </li>
+                    <li>
+                        <a href="#pageProductDetails" data-icon="tag">Product Details</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <h2>Welcome to my Online Shoe Collection Retail Store</h2>
+            <img src="_lib/img/running-shoes.png" style="margin-left: auto; margin-right: auto; display: block;" alt="running shoes icon">
+            <p>I collect all different types and brands of shoes. Here are some examples of shoes that I collect:</p>
+            <img src="_lib/img/nike.jpg" style="margin-left: auto; margin-right: auto; display: block;" alt="nike running shoe">
+            <br>
+            <br>
+            <img src="_lib/img/newbalance.jpg" style="margin-left: auto; margin-right: auto; display: block;" alt="new balance running shoe">
+            <br>
+            <br>
+            <img src="_lib/img/airjordan.jpg" style="margin-left: auto; margin-right: auto; display: block;" alt="air jordan sneaker">
+            <br>
+        </section>
+        <footer data-role="footer" data-position="fixed" data-theme="b">
+            <h1>&copy; 2023 Rish Naik</h1>
+        </footer>
+    </div>
+    <div id="pageProducts" data-role="page">
+        <header data-role="header" data-position="fixed" data-theme="b">
+            <h1>Products</h1>
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li>
+                        <a href="#pageHome" data-icon="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#pageProducts" data-icon="tag" class="ui-btn-active ui-state-persist">Products</a>
+                    </li>
+                    <li>
+                        <a href="#pageProductDetails" data-icon="tag">Product Details</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <h2>Click on any of the shoes for more information</h2>
+            <ul data-role="listview" id="lstViewProducts" name="lstViewProducts" class="ui-listview-inset" data-split-icon="bars">
+                <li data-icon="tag" data-iconpos="right" class="border">
+                    <a href="#pageProductDetails">
+                        <h3>Nike 11 Red Running Shoes</h3>
+                        <img src="_lib/img/nike.jpg" style="margin-left: auto; margin-right: auto; display: inline-list-item;" alt="nike running shoe">
+                    </a>
+                </li>
+                <li data-icon="tag" data-iconpos="right" class="border">
+                    <a href="#pageProductDetails">
+                        <h3>New balance Black & Green Low top Running Shoes</h3>
+                        <img src="_lib/img/newbalance.jpg" style="margin-left: auto; margin-right: auto; display: inline-list-item;" alt="new balance running shoe">
+                    </a>
+                </li>
+                <li data-icon="tag" data-iconpos="right" class="border">
+                    <a href="#pageProductDetails">
+                        <h3>Air Jordan 11 Sneakers</h3>
+                        <img src="_lib/img/airjordan.jpg" style="margin-left: auto; margin-right: auto; display: inline-list-item;" alt="air jordan sneaker">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <footer data-role="footer" data-position="fixed" data-theme="b">
+            <h1>&copy; 2023 Rish Naik</h1>
+        </footer>
+    </div>
+    <div id="pageProductDetails" data-role="page">
+        <header data-role="header" data-position="fixed" data-theme="b">
+            <h1>Products</h1>
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li>
+                        <a href="#pageHome" data-icon="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#pageProducts" data-icon="tag">Products</a>
+                    </li>
+                    <li>
+                        <a href="#pageProductDetails" data-icon="tag" class="ui-btn-active ui-state-persist">Product Details</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <h2>Product Details</h2>
+            <ul data-role="listview" id="lstViewProductDetails" name="lstViewProductDetails" class="ui-listview-inset" data-split-icon="bars">
+                <li data-icon="bullets" data-iconpos="right" class="border">
+                    <a href="#">
+                        <h3>Nike 11 Red Running Shoes</h3>
+                        <p>Sizes available: 7, 8, 8.50, 9, 9.50, 10, 10.50, 11, 12</p>
+                        <p>Price: $180</p>
+                        <p>Rating: 8.5/10</p>
+                    </a>
+                    <input type="button" id="btnAdd" name="btnAdd" value="Add to Cart" data-theme="b">
+                </li>
+                <li data-icon="bullets" data-iconpos="right" class="border">
+                    <a href="#">
+                        <h3>New Balance Black & Green Running Shoes</h3>
+                        <p>Sizes available: 7, 8, 8.50, 9, 9.50, 10, 10.50, 11, 12</p>
+                        <p>Price: $180</p>
+                        <p>Rating: 7.5/10</p>
+                    </a>
+                    <input type="button" id="btnAdd2" name="btnAdd2" value="Add to Cart" data-theme="b">
+                </li>
+                <li data-icon="bullets" data-iconpos="right" class="border">
+                    <a href="#">
+                        <h3>Air Jordan 11 Sneakers</h3>
+                        <p>Sizes available: 8, 8.50, 9, 9.50, 10, 10.50, 11, 12, 13</p>
+                        <p>Price: $180</p>
+                        <p>Rating: 9/10</p>
+                    </a>
+                    <input type="button" id="btnAdd3" name="btnAdd3" value="Add to Cart" data-theme="b">
+                </li>
+            </ul>
+        </section>
+        <footer data-role="footer" data-position="fixed" data-theme="b">
+            <h1>&copy; 2023 Rish Naik</h1>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.border{
+    background-color: antiquewhite;
+    border: 1px solid white;
+    box-shadow: 3px 3px 7px 3px rgba(0,0,0,0.3);
+    margin: 20px;
+}
